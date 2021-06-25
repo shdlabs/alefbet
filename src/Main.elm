@@ -44,38 +44,390 @@ view model =
         [ css
             [ Tw.flex
             , Tw.flex_col
-            , Tw.justify_start
+            , Tw.justify_end
             , Tw.m_2
-            , Tw.items_end
+            , Tw.items_start
+            , Tw.text_sm
             , Tw.font_semibold
-            , Tw.overflow_x_auto
             , Tw.font_body
             ]
         ]
-        [ div [ css [] ] [ text "א" ]
-        , div [ css [] ]
-            (alef2
-                ++ lamed2
-                ++ pay2
-                ++ lamed2
-                ++ mem2
-                ++ daled2
-                ++ pay2
-                ++ alef2
-                ++ lamed2
-                ++ mem2
-                ++ daled2
-                ++ mem2
-                ++ mem2
-                ++ daled2
-                ++ lamed2
-                ++ tav2
-                ++ pay2
-                ++ alef2
-                ++ alef2
-                ++ lamed2
-                ++ pay2
-            )
+        [ div [ css [ Tw.flex, Tw.flex_col, Tw.text_right ] ]
+            [ div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_blue_700
+                    ]
+                ]
+                [ text
+                    (stage2 "א"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_green_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ב"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_red_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ג"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_blue_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ד"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_green_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ה"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_red_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ו"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_blue_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ז"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_green_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ח"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_red_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ט"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_blue_700
+                    ]
+                ]
+                [ text
+                    (stage2 "י"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_green_700
+                    ]
+                ]
+                [ text
+                    (stage2 "כ"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_red_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ל"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_blue_700
+                    ]
+                ]
+                [ text
+                    (stage2 "מ"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_green_700
+                    ]
+                ]
+                [ text
+                    (stage2 "נ"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_red_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ס"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_blue_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ע"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_green_700
+                    ]
+                ]
+                [ text
+                    (stage2 "פ"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_red_700
+                    ]
+                ]
+                [ text
+                    (stage2 "צ"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_blue_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ק"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_green_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ר"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_red_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ש"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            , div
+                [ css
+                    [ Tw.flex
+                    , Tw.box_border
+                    , Tw.box_content
+                    , Tw.border_b_2
+                    , Tw.text_blue_700
+                    ]
+                ]
+                [ text
+                    (stage2 "ת"
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                        |> stage2
+                    )
+                ]
+            ]
         , Css.Global.global Tw.globalStyles
         ]
 
