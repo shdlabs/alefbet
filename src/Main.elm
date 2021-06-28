@@ -120,6 +120,31 @@ letterLine letter =
                 |> openLine
             )
         ]
+    , div
+        [ css [ Tw.border_t_2, Tw.border_dotted ] ]
+        [ text
+            (openLine letter
+                |> openLine
+                |> openLine
+                |> openLine
+                |> openLine
+                |> openLine
+                |> openLine
+            )
+        ]
+    , div
+        [ css [ Tw.border_t_2, Tw.border_dotted ] ]
+        [ text
+            (openLine letter
+                |> openLine
+                |> openLine
+                |> openLine
+                |> openLine
+                |> openLine
+                |> openLine
+                |> openLine
+            )
+        ]
     ]
 
 
