@@ -76,14 +76,14 @@ view _ =
 letterLine : String -> List (Html Msg)
 letterLine letter =
     [ div
-        [ css [] ]
+        [ css [ Tw.border_t_2, Tw.border_dotted ] ]
         [ text
             (openLine letter
                 |> openLine
             )
         ]
     , div
-        [ css [] ]
+        [ css [ Tw.border_t_2, Tw.border_dotted ] ]
         [ text
             (openLine letter
                 |> openLine
@@ -91,7 +91,7 @@ letterLine letter =
             )
         ]
     , div
-        [ css [] ]
+        [ css [ Tw.border_t_2, Tw.border_dotted ] ]
         [ text
             (openLine letter
                 |> openLine
@@ -100,9 +100,20 @@ letterLine letter =
             )
         ]
     , div
-        [ css [] ]
+        [ css [ Tw.border_t_2, Tw.border_dotted ] ]
         [ text
             (openLine letter
+                |> openLine
+                |> openLine
+                |> openLine
+                |> openLine
+            )
+        ]
+    , div
+        [ css [ Tw.border_t_2, Tw.border_dotted ] ]
+        [ text
+            (openLine letter
+                |> openLine
                 |> openLine
                 |> openLine
                 |> openLine
