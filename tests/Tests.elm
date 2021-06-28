@@ -13,20 +13,34 @@ tests : Test
 tests =
     describe "Convert Hebrew Letters"
         [ describe "Convert first level"
-            [ test "alef" <| \_ -> Expect.equal "אלפ" (stage2 "א")
-            , test "bet" <| \_ -> Expect.equal "בית" (stage2 "ב")
-            , test "tav" <| \_ -> Expect.equal "תו" (stage2 "ת")
+            [ test "alef" <|
+                \_ ->
+                    Expect.equal "אלפ" (openLine "א")
+            , test "bet" <|
+                \_ ->
+                    Expect.equal "בית" (openLine "ב")
+            , test "tav" <|
+                \_ ->
+                    Expect.equal "תו" (openLine "ת")
             ]
         , describe "Convert second level"
-            [ test "alef" <| \_ -> Expect.equal "אלפ למד פא" (stage2 "אלפ")
+            [ test "alef" <|
+                \_ ->
+                    Expect.equal "אלפ למד פא" (openLine "אלפ")
             ]
         , describe "Convert third level"
-            [ test "alef" <| \_ -> Expect.equal "אלפ למד פא" (stage2 "אלפ")
+            [ test "alef" <|
+                \_ ->
+                    Expect.equal "אלפ למד פא" (openLine "אלפ")
             ]
         , describe "Convert fourth level"
-            [ test "alef" <| \_ -> Expect.equal "אלפ למד פא למד ממ דלת פא אלפ" (stage2 "אלפלמדפא")
+            [ test "alef" <|
+                \_ ->
+                    Expect.equal "אלפ למד פא למד ממ דלת פא אלפ" (openLine "אלפלמדפא")
             ]
         , describe "Convert five level"
-            [ test "alef" <| \_ -> Expect.equal "אלפ למד פא למד ממ דלת פא אלפ" (stage2 "אלפלמדפא")
+            [ test "alef" <|
+                \_ ->
+                    Expect.equal "אלפ למד פא למד ממ דלת פא אלפ" (openLine "אלפלמדפא")
             ]
         ]

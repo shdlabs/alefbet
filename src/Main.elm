@@ -1,6 +1,7 @@
 module Main exposing (..)
 
 import Browser
+import Css exposing (Style)
 import Css.Global
 import Html.Styled exposing (..)
 import Html.Styled.Attributes exposing (..)
@@ -30,7 +31,7 @@ type Msg
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
+update _ model =
     ( model, Cmd.none )
 
 
@@ -39,392 +40,230 @@ update msg model =
 
 
 view : Model -> Html Msg
-view model =
+view _ =
     div
         [ css
-            [ Tw.flex
-            , Tw.flex_col
-            , Tw.justify_end
-            , Tw.m_2
-            , Tw.items_start
-            , Tw.text_sm
-            , Tw.font_semibold
-            , Tw.font_body
-            ]
+            mainCss
         ]
         [ div [ css [ Tw.flex, Tw.flex_col, Tw.text_right ] ]
             [ div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_blue_700
-                    ]
-                ]
+                [ css blueLineCss ]
                 [ text
-                    (stage2 "א"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "א"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_green_700
-                    ]
-                ]
+                [ css greenLineCss ]
                 [ text
-                    (stage2 "ב"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ב"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_red_700
-                    ]
-                ]
+                [ css redLineCss ]
                 [ text
-                    (stage2 "ג"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ג"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_blue_700
-                    ]
-                ]
+                [ css blueLineCss ]
                 [ text
-                    (stage2 "ד"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ד"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_green_700
-                    ]
-                ]
+                [ css greenLineCss ]
                 [ text
-                    (stage2 "ה"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ה"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_red_700
-                    ]
-                ]
+                [ css redLineCss ]
                 [ text
-                    (stage2 "ו"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ו"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_blue_700
-                    ]
-                ]
+                [ css blueLineCss ]
                 [ text
-                    (stage2 "ז"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ז"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_green_700
-                    ]
-                ]
+                [ css greenLineCss ]
                 [ text
-                    (stage2 "ח"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ח"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_red_700
-                    ]
-                ]
+                [ css redLineCss ]
                 [ text
-                    (stage2 "ט"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ט"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_blue_700
-                    ]
-                ]
+                [ css blueLineCss ]
                 [ text
-                    (stage2 "י"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "י"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_green_700
-                    ]
-                ]
+                [ css greenLineCss ]
                 [ text
-                    (stage2 "כ"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "כ"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_red_700
-                    ]
-                ]
+                [ css redLineCss ]
                 [ text
-                    (stage2 "ל"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ל"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_blue_700
-                    ]
-                ]
+                [ css blueLineCss ]
                 [ text
-                    (stage2 "מ"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "מ"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_green_700
-                    ]
-                ]
+                [ css greenLineCss ]
                 [ text
-                    (stage2 "נ"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "נ"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_red_700
-                    ]
-                ]
+                [ css redLineCss ]
                 [ text
-                    (stage2 "ס"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ס"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_blue_700
-                    ]
-                ]
+                [ css blueLineCss ]
                 [ text
-                    (stage2 "ע"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ע"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_green_700
-                    ]
-                ]
+                [ css greenLineCss ]
                 [ text
-                    (stage2 "פ"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "פ"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_red_700
-                    ]
-                ]
+                [ css redLineCss ]
                 [ text
-                    (stage2 "צ"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "צ"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_blue_700
-                    ]
-                ]
+                [ css blueLineCss ]
                 [ text
-                    (stage2 "ק"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ק"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_green_700
-                    ]
-                ]
+                [ css greenLineCss ]
                 [ text
-                    (stage2 "ר"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ר"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_red_700
-                    ]
-                ]
+                [ css redLineCss ]
                 [ text
-                    (stage2 "ש"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ש"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             , div
-                [ css
-                    [ Tw.flex
-                    , Tw.box_border
-                    , Tw.box_content
-                    , Tw.border_b_2
-                    , Tw.text_blue_700
-                    ]
-                ]
+                [ css blueLineCss ]
                 [ text
-                    (stage2 "ת"
-                        |> stage2
-                        |> stage2
-                        |> stage2
-                        |> stage2
+                    (openLine "ת"
+                        |> openLine
+                        |> openLine
+                        |> openLine
+                        |> openLine
                     )
                 ]
             ]
@@ -444,3 +283,50 @@ main =
         , update = update
         , subscriptions = always Sub.none
         }
+
+
+
+---- CSS ----
+
+
+greenLineCss : List Style
+greenLineCss =
+    [ Tw.flex
+    , Tw.box_border
+    , Tw.box_content
+    , Tw.border_b_2
+    , Tw.text_green_700
+    ]
+
+
+redLineCss : List Style
+redLineCss =
+    [ Tw.flex
+    , Tw.box_border
+    , Tw.box_content
+    , Tw.border_b_2
+    , Tw.text_red_700
+    ]
+
+
+blueLineCss : List Style
+blueLineCss =
+    [ Tw.flex
+    , Tw.box_border
+    , Tw.box_content
+    , Tw.border_b_2
+    , Tw.text_blue_700
+    ]
+
+
+mainCss : List Style
+mainCss =
+    [ Tw.flex
+    , Tw.flex_col
+    , Tw.justify_end
+    , Tw.p_3
+    , Tw.items_start
+    , Tw.text_sm
+    , Tw.font_semibold
+    , Tw.font_body
+    ]

@@ -1,10 +1,10 @@
-module Letters exposing (..)
+module Letters exposing (openLine)
 
 import Html.Styled exposing (..)
 
 
-stage : Char -> String
-stage letter =
+openChar : Char -> String
+openChar letter =
     case letter of
         'א' ->
             "אלפ"
@@ -76,10 +76,6 @@ stage letter =
             ""
 
 
-stage2 : String -> String
-stage2 line =
-    String.toList line |> List.map stage |> String.join " " |> String.trim
-
-
-
--- "אלפ|למד|פא||למד|ממ|דלת||פא|אלפ"
+openLine : String -> String
+openLine line =
+    String.toList line |> List.map openChar |> String.join " "
