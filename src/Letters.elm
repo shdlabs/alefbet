@@ -78,4 +78,4 @@ openChar letter =
 
 openLine : String -> String
 openLine line =
-    String.toList line |> List.map openChar |> String.join " "
+    String.toList line |> List.map openChar |> String.join " " |> String.trim
